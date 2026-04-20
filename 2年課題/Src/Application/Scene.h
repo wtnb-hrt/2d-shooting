@@ -29,6 +29,8 @@ public:
 
 private:
 
+	int test = 0;
+
 	Scene() {}
 
 public:
