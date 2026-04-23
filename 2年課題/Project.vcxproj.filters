@@ -43,6 +43,18 @@
     <Filter Include="Src\System\Audio">
       <UniqueIdentifier>{667d1cb1-5ae5-476f-acd5-14b7d294a95a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\Application\Characters">
+      <UniqueIdentifier>{fd826b8a-7a5b-4ff2-a858-1ee0513a1fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Scene">
+      <UniqueIdentifier>{0c2e096b-fdfd-46be-ac00-6a342264b510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Particles">
+      <UniqueIdentifier>{2d96d936-1e81-4197-976c-d3d7896af5bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Screen">
+      <UniqueIdentifier>{218ca033-c4b4-4481-995e-f4040fa6b610}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Pch.h">
@@ -138,6 +150,36 @@
     <ClInclude Include="Src\Application\Scene.h">
       <Filter>Src\Application</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Application\CharaBase.h">
+      <Filter>Src\Application\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Player.h">
+      <Filter>Src\Application\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Enemy.h">
+      <Filter>Src\Application\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Boss.h">
+      <Filter>Src\Application\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\SceneManager.h">
+      <Filter>Src\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\TitleScene.h">
+      <Filter>Src\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\GameScene.h">
+      <Filter>Src\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\ResultScene.h">
+      <Filter>Src\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\BaseScene.h">
+      <Filter>Src\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Screen.h">
+      <Filter>Src\Application\Screen</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Pch.cpp">
@@ -202,6 +244,36 @@
     </ClCompile>
     <ClCompile Include="Src\Application\Scene.cpp">
       <Filter>Src\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\CharaBase.cpp">
+      <Filter>Src\Application\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Player.cpp">
+      <Filter>Src\Application\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Enemy.cpp">
+      <Filter>Src\Application\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Boss.cpp">
+      <Filter>Src\Application\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\SceneManager.cpp">
+      <Filter>Src\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\TitleScene.cpp">
+      <Filter>Src\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\GameScene.cpp">
+      <Filter>Src\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\ResultScene.cpp">
+      <Filter>Src\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\BaseScene.cpp">
+      <Filter>Src\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Screen.cpp">
+      <Filter>Src\Application\Screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

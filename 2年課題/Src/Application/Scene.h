@@ -1,5 +1,9 @@
 #pragma once
 
+//前方宣言
+class BaseScene;
+class Screen;
+
 class Scene
 {
 private:
@@ -21,11 +25,18 @@ public:
 	// 更新処理
 	void Update();
 
+	//テクスチャへ描画
+	void DynamicDraw2D();
+
 	// 描画処理
 	void Draw2D();
 
 	// GUI処理
 	void ImGuiUpdate();
+
+	//インスタンス
+	std::shared_ptr<BaseScene>m_baseScene;
+	std::shared_ptr<Screen>m_screen;
 
 private:
 

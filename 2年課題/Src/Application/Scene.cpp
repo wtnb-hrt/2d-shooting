@@ -1,35 +1,81 @@
 #include "main.h"
 #include "Scene.h"
+#include "TitleScene.h"
+#include "GameScene.h"
+#include "ResultScene.h"
+#include "Screen.h"
+
+void Scene::DynamicDraw2D()
+{
+	//レンダーターゲット変更
+	m_screen->DynamicDraw();
+
+	//描画
+	m_baseScene->Draw();
+}
 
 void Scene::Draw2D()
 {
-	// 文字列表示
-	SHADER.m_spriteShader.DrawString(0, 0, "Hello World", Math::Vector4(1, 1, 0, 1));
+	//バックバッファへ描画
+	D3D.SetBackBuffer();
+
+	//画面の描画
+	m_screen->Draw();
 }
 
 void Scene::Update()
 {
-	
+	m_baseScene->Update();
+	m_screen->Update();
 }
 
 void Scene::Init()
 {
-	// 画像の読み込み処理
-	charaTex.Load("player.png");
+	//乱数シャッフル
+	srand(timeGetTime());
+
+	//インスタンス生成
+	m_baseScene = std::make_shared<GameScene>();
+	m_screen    = std::make_shared<Screen>();
+
+	//初期化
+	m_baseScene->Init();
+	m_screen->Init();
 }
 
 void Scene::Release()
 {
-	// 画像の解放処理
-	charaTex.Release();
+	
 }
 
 void Scene::ImGuiUpdate()
 {
-	return;
+	//return;
 
 	ImGui::SetNextWindowPos(ImVec2(20, 20), ImGuiSetCond_Once);
 	ImGui::SetNextWindowSize(ImVec2(200, 100), ImGuiSetCond_Once);
+
+	//シーン管理
+	if (ImGui::Button("Title"))
+	{
+		m_baseScene = std::make_shared<TitleScene>();
+	}
+
+	if (ImGui::Button("Game"))
+	{
+		m_baseScene = std::make_shared<GameScene>();
+	}
+
+	if (ImGui::Button("Result"))
+	{
+		m_baseScene = std::make_shared<ResultScene>();
+	}
+
+	//画面振動
+	if (ImGui::Button("Shake"))
+	{
+		m_screen->Shake(5,0.2f);
+	}
 
 	// デバッグウィンドウ
 	if (ImGui::Begin("Debug Window"))
