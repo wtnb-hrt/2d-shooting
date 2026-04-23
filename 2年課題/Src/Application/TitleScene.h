@@ -1,7 +1,7 @@
 #pragma once
-#include "BaseScene.h" 
+#include "SceneBase.h" 
 
-class TitleScene :public BaseScene
+class TitleScene :public SceneBase
 {
 public:
 	TitleScene() {}

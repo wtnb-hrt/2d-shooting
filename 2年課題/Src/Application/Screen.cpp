@@ -35,7 +35,7 @@ void Screen::Update()
 //レンダーターゲット変更
 void Screen::DynamicDraw()
 {
-	m_tex.ClearRenerTarget(Math::Color(0.0f, 0.0f, 0.0f, 0.0f));
+	m_tex.ClearRenderTarget(Math::Color(0.0f, 0.0f, 0.0f, 0.0f));
 	m_tex.SetRenderTarget();
 }
 

@@ -1,10 +1,10 @@
 #pragma once
 
-class BaseScene
+class SceneBase
 {
 public:
-	BaseScene() {}
-	~BaseScene() {}
+	SceneBase() {}
+	~SceneBase() {}
 
 	virtual void Init() {};
 	virtual void Update() {};

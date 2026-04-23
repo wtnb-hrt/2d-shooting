@@ -11,7 +11,7 @@ void Scene::DynamicDraw2D()
 	m_screen->DynamicDraw();
 
 	//描画
-	m_baseScene->Draw();
+	m_sceneBase->Draw();
 }
 
 void Scene::Draw2D()
@@ -25,7 +25,7 @@ void Scene::Draw2D()
 
 void Scene::Update()
 {
-	m_baseScene->Update();
+	m_sceneBase->Update();
 	m_screen->Update();
 }
 
@@ -35,11 +35,11 @@ void Scene::Init()
 	srand(timeGetTime());
 
 	//インスタンス生成
-	m_baseScene = std::make_shared<GameScene>();
+	m_sceneBase = std::make_shared<GameScene>();
 	m_screen    = std::make_shared<Screen>();
 
 	//初期化
-	m_baseScene->Init();
+	m_sceneBase->Init();
 	m_screen->Init();
 }
 
@@ -58,17 +58,17 @@ void Scene::ImGuiUpdate()
 	//シーン管理
 	if (ImGui::Button("Title"))
 	{
-		m_baseScene = std::make_shared<TitleScene>();
+		m_sceneBase = std::make_shared<TitleScene>();
 	}
 
 	if (ImGui::Button("Game"))
 	{
-		m_baseScene = std::make_shared<GameScene>();
+		m_sceneBase = std::make_shared<GameScene>();
 	}
 
 	if (ImGui::Button("Result"))
 	{
-		m_baseScene = std::make_shared<ResultScene>();
+		m_sceneBase = std::make_shared<ResultScene>();
 	}
 
 	//画面振動

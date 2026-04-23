@@ -7,9 +7,9 @@ public:
 	CharaBase() {}
 	~CharaBase() {}
 
-	void Init();
-	void Draw();
-	void Update();
+	virtual void Init();
+	virtual void Update();
+	virtual void Draw();
 
 protected:
 

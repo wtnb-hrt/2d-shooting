@@ -162,9 +162,6 @@
     <ClInclude Include="Src\Application\Boss.h">
       <Filter>Src\Application\Characters</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Application\SceneManager.h">
-      <Filter>Src\Application\Scene</Filter>
-    </ClInclude>
     <ClInclude Include="Src\Application\TitleScene.h">
       <Filter>Src\Application\Scene</Filter>
     </ClInclude>
@@ -174,7 +171,7 @@
     <ClInclude Include="Src\Application\ResultScene.h">
       <Filter>Src\Application\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Src\Application\BaseScene.h">
+    <ClInclude Include="Src\Application\SceneBase.h">
       <Filter>Src\Application\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Src\Application\Screen.h">
@@ -257,9 +254,6 @@
     <ClCompile Include="Src\Application\Boss.cpp">
       <Filter>Src\Application\Characters</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Application\SceneManager.cpp">
-      <Filter>Src\Application\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="Src\Application\TitleScene.cpp">
       <Filter>Src\Application\Scene</Filter>
     </ClCompile>
@@ -269,7 +263,7 @@
     <ClCompile Include="Src\Application\ResultScene.cpp">
       <Filter>Src\Application\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Src\Application\BaseScene.cpp">
+    <ClCompile Include="Src\Application\SceneBase.cpp">
       <Filter>Src\Application\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Src\Application\Screen.cpp">

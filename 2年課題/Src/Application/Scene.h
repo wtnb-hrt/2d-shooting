@@ -1,8 +1,9 @@
 #pragma once
 
 //前方宣言
-class BaseScene;
+class SceneBase;
 class Screen;
+class Player;
 
 class Scene
 {
@@ -35,8 +36,10 @@ public:
 	void ImGuiUpdate();
 
 	//インスタンス
-	std::shared_ptr<BaseScene>m_baseScene;
+	std::shared_ptr<SceneBase>m_sceneBase;
 	std::shared_ptr<Screen>m_screen;
+
+	//std::vector<Player*>m_player;
 
 private:
 
