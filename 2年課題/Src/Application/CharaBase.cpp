@@ -1,16 +1,19 @@
 #include "CharaBase.h"
 
+//‰Šú‰»
 void CharaBase::Init()
 {
 
 }
 
-void CharaBase::Draw()
+//XV
+void CharaBase::Update()
 {
 
 }
 
-void CharaBase::Update()
+//•`‰æ
+void CharaBase::Draw()
 {
 
 }

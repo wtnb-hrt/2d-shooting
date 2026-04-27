@@ -4,6 +4,7 @@
 class TitleScene :public SceneBase
 {
 public:
+
 	TitleScene() {}
 	~TitleScene() {}
 

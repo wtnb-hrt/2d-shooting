@@ -4,6 +4,7 @@
 class ResultScene :public SceneBase
 {
 public:
+
 	ResultScene() {}
 	~ResultScene() {}
 

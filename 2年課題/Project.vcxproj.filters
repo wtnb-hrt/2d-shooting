@@ -55,6 +55,9 @@
     <Filter Include="Src\Application\Screen">
       <UniqueIdentifier>{218ca033-c4b4-4481-995e-f4040fa6b610}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\Application\Texture">
+      <UniqueIdentifier>{37830ab8-48c6-4650-906f-bd1147dc3c6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Pch.h">
@@ -177,6 +180,9 @@
     <ClInclude Include="Src\Application\Screen.h">
       <Filter>Src\Application\Screen</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Application\Texture.h">
+      <Filter>Src\Application\Texture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Pch.cpp">
@@ -268,6 +274,9 @@
     </ClCompile>
     <ClCompile Include="Src\Application\Screen.cpp">
       <Filter>Src\Application\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Texture.cpp">
+      <Filter>Src\Application\Texture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

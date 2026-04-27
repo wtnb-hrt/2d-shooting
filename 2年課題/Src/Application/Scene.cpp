@@ -27,6 +27,7 @@ void Scene::Update()
 {
 	m_sceneBase->Update();
 	m_screen->Update();
+
 }
 
 void Scene::Init()
@@ -38,6 +39,9 @@ void Scene::Init()
 	m_sceneBase = std::make_shared<GameScene>();
 	m_screen    = std::make_shared<Screen>();
 
+	//テクスチャ読み込み
+	//m_sceneBase->Test();
+
 	//初期化
 	m_sceneBase->Init();
 	m_screen->Init();
@@ -45,7 +49,8 @@ void Scene::Init()
 
 void Scene::Release()
 {
-	
+	//シーン開放
+	m_sceneBase->Release();
 }
 
 void Scene::ImGuiUpdate()
@@ -58,17 +63,23 @@ void Scene::ImGuiUpdate()
 	//シーン管理
 	if (ImGui::Button("Title"))
 	{
+		m_sceneBase->Release();
 		m_sceneBase = std::make_shared<TitleScene>();
+		m_sceneBase->Init();
 	}
 
 	if (ImGui::Button("Game"))
 	{
+		m_sceneBase->Release();
 		m_sceneBase = std::make_shared<GameScene>();
+		m_sceneBase->Init();
 	}
 
 	if (ImGui::Button("Result"))
 	{
+		m_sceneBase->Release();
 		m_sceneBase = std::make_shared<ResultScene>();
+		m_sceneBase->Init();
 	}
 
 	//画面振動

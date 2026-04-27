@@ -169,6 +169,7 @@
     <ClInclude Include="Src\Application\ResultScene.h" />
     <ClInclude Include="Src\Application\Scene.h" />
     <ClInclude Include="Src\Application\main.h" />
+    <ClInclude Include="Src\Application\Texture.h" />
     <ClInclude Include="Src\Application\TitleScene.h" />
     <ClInclude Include="Src\System\Audio\KdAudio.h" />
     <ClInclude Include="src\System\Direct3D\KdDirect3D.h" />
@@ -203,6 +204,7 @@
     <ClCompile Include="Src\Application\ResultScene.cpp" />
     <ClCompile Include="Src\Application\Scene.cpp" />
     <ClCompile Include="Src\Application\main.cpp" />
+    <ClCompile Include="Src\Application\Texture.cpp" />
     <ClCompile Include="Src\Application\TitleScene.cpp" />
     <ClCompile Include="Src\System\Audio\KdAudio.cpp" />
     <ClCompile Include="src\System\Direct3D\KdDirect3D.cpp" />

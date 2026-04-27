@@ -3,17 +3,14 @@
 //前方宣言
 class SceneBase;
 class Screen;
-class Player;
 
 class Scene
 {
 private:
 
-	// テクスチャ ・・・ 画像データ
-	KdTexture charaTex;
-
-	// 行列 ・・・ 座標などの情報
-	Math::Matrix matrix;
+	//インスタンス
+	std::shared_ptr<SceneBase>m_sceneBase;
+	std::shared_ptr<Screen>m_screen;
 
 public:
 
@@ -35,11 +32,7 @@ public:
 	// GUI処理
 	void ImGuiUpdate();
 
-	//インスタンス
-	std::shared_ptr<SceneBase>m_sceneBase;
-	std::shared_ptr<Screen>m_screen;
-
-	//std::vector<Player*>m_player;
+	//シーン更新
 
 private:
 

@@ -1,21 +1,33 @@
 #include "GameScene.h"
+#include "Player.h"
 
 //初期化
 void GameScene::Init()
 {
-
+	//プレイヤー
+	m_player = new Player;
+	m_player->Init();
+	m_player->SetTex(&m_playerTex);
 }
 
 //更新
 void GameScene::Update()
 {
-
+		
 }
 
 //描画
 void GameScene::Draw()
 {
-	Math::Color color;
-	color = { 0,0,1.0f,1.0f };
-	SHADER.m_spriteShader.DrawBox(0, 0, 320, 180, &color, true);
+	m_player->Draw();
+}
+
+//解放処理
+void GameScene::Release()
+{
+	if (m_player)
+	{
+		delete m_player;
+		m_player = nullptr;
+	}
 }
