@@ -33,6 +33,7 @@ public:
 	void ImGuiUpdate();
 
 	//シーン更新
+	void SetScene(int scene);
 
 private:
 

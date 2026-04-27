@@ -9,7 +9,7 @@ void TitleScene::Init()
 //XV
 void TitleScene::Update()
 {
-
+	Test();
 }
 
 //•`‰æ

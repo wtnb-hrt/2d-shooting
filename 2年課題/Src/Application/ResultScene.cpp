@@ -9,7 +9,7 @@ void ResultScene::Init()
 //XV
 void ResultScene::Update()
 {
-
+	Test();
 }
 
 //•`‰æ

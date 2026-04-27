@@ -13,7 +13,9 @@ void GameScene::Init()
 //XV
 void GameScene::Update()
 {
-		
+
+
+	Test();
 }
 
 //•`‰æ

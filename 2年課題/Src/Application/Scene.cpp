@@ -41,6 +41,7 @@ void Scene::Init()
 
 	//テクスチャ読み込み
 	//m_sceneBase->Test();
+	m_sceneBase->SetOwner(this);
 
 	//初期化
 	m_sceneBase->Init();
@@ -94,4 +95,31 @@ void Scene::ImGuiUpdate()
 		ImGui::Text("FPS : %d", APP.m_fps);
 	}
 	ImGui::End();
+}
+
+void Scene::SetScene(int scene)
+{
+	m_sceneBase->Release();
+
+	switch (scene)
+	{
+	case 0:
+
+		m_sceneBase = std::make_shared<TitleScene>();
+
+		break;
+	case 1:
+
+		m_sceneBase = std::make_shared<GameScene>();
+
+		break;
+	case 2:
+
+		m_sceneBase = std::make_shared<ResultScene>();
+
+		break;
+	}
+
+	m_sceneBase->SetOwner(this);
+	m_sceneBase->Init();
 }
