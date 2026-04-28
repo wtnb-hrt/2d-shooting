@@ -40,7 +40,9 @@ void Scene::Init()
 	m_screen    = std::make_shared<Screen>();
 
 	//テクスチャ読み込み
-	//m_sceneBase->Test();
+	m_playerTex.Load("Textures/player.png");
+
+	//仮
 	m_sceneBase->SetOwner(this);
 
 	//初期化
@@ -50,6 +52,8 @@ void Scene::Init()
 
 void Scene::Release()
 {
+	m_playerTex.Release();
+
 	//シーン開放
 	m_sceneBase->Release();
 }
@@ -64,23 +68,17 @@ void Scene::ImGuiUpdate()
 	//シーン管理
 	if (ImGui::Button("Title"))
 	{
-		m_sceneBase->Release();
-		m_sceneBase = std::make_shared<TitleScene>();
-		m_sceneBase->Init();
+		SetScene(0);
 	}
 
 	if (ImGui::Button("Game"))
 	{
-		m_sceneBase->Release();
-		m_sceneBase = std::make_shared<GameScene>();
-		m_sceneBase->Init();
+		SetScene(1);
 	}
 
 	if (ImGui::Button("Result"))
 	{
-		m_sceneBase->Release();
-		m_sceneBase = std::make_shared<ResultScene>();
-		m_sceneBase->Init();
+		SetScene(2);
 	}
 
 	//画面振動

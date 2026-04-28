@@ -161,7 +161,7 @@
     <ClInclude Include="..\Library\tinygltf\tiny_gltf.h" />
     <ClInclude Include="Src\Application\SceneBase.h" />
     <ClInclude Include="Src\Application\Boss.h" />
-    <ClInclude Include="Src\Application\CharaBase.h" />
+    <ClInclude Include="Src\Application\ObjectBase.h" />
     <ClInclude Include="Src\Application\Screen.h" />
     <ClInclude Include="Src\Application\Enemy.h" />
     <ClInclude Include="Src\Application\GameScene.h" />
@@ -169,7 +169,6 @@
     <ClInclude Include="Src\Application\ResultScene.h" />
     <ClInclude Include="Src\Application\Scene.h" />
     <ClInclude Include="Src\Application\main.h" />
-    <ClInclude Include="Src\Application\Texture.h" />
     <ClInclude Include="Src\Application\TitleScene.h" />
     <ClInclude Include="Src\System\Audio\KdAudio.h" />
     <ClInclude Include="src\System\Direct3D\KdDirect3D.h" />
@@ -196,7 +195,7 @@
     <ClCompile Include="..\Library\imgui\imgui_widgets.cpp" />
     <ClCompile Include="Src\Application\SceneBase.cpp" />
     <ClCompile Include="Src\Application\Boss.cpp" />
-    <ClCompile Include="Src\Application\CharaBase.cpp" />
+    <ClCompile Include="Src\Application\ObjectBase.cpp" />
     <ClCompile Include="Src\Application\Screen.cpp" />
     <ClCompile Include="Src\Application\Enemy.cpp" />
     <ClCompile Include="Src\Application\GameScene.cpp" />
@@ -204,7 +203,6 @@
     <ClCompile Include="Src\Application\ResultScene.cpp" />
     <ClCompile Include="Src\Application\Scene.cpp" />
     <ClCompile Include="Src\Application\main.cpp" />
-    <ClCompile Include="Src\Application\Texture.cpp" />
     <ClCompile Include="Src\Application\TitleScene.cpp" />
     <ClCompile Include="Src\System\Audio\KdAudio.cpp" />
     <ClCompile Include="src\System\Direct3D\KdDirect3D.cpp" />

@@ -32,8 +32,11 @@ public:
 	// GUI処理
 	void ImGuiUpdate();
 
-	//シーン更新
+	//シーン遷移
 	void SetScene(int scene);
+
+	//テクスチャ
+	KdTexture m_playerTex;
 
 private:
 

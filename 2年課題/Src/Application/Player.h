@@ -1,7 +1,7 @@
 #pragma once
-#include "CharaBase.h"
+#include "ObjectBase.h"
 
-class Player :public CharaBase
+class Player :public ObjectBase
 {
 public:
 
@@ -14,5 +14,11 @@ public:
 	
 private:
 
+	float m_speed;
 	
+	//’è”
+	const float rotSpeed	= 3.5f;
+	const float m_speedAdd	= 0.15f;
+	const float m_speedSub	= 0.08f;
+	const float m_maxSpeed  = 8.0f;
 };

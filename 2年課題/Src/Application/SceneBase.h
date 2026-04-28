@@ -7,8 +7,8 @@ class SceneBase
 {
 public:
 
-	SceneBase():m_owner(nullptr) { m_playerTex.Load("Textures/player.png"); }
-	~SceneBase() { m_playerTex.Release(); }
+	SceneBase():m_owner(nullptr) {}
+	~SceneBase() {}
 
 	virtual void Init() {};
 	virtual void Update() {};
@@ -21,7 +21,4 @@ public:
 protected:
 
 	Scene *m_owner;
-
-	KdTexture m_playerTex;
-
 };
